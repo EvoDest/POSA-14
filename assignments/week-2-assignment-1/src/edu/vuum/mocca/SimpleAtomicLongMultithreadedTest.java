@@ -150,7 +150,7 @@ public class SimpleAtomicLongMultithreadedTest {
          */
         getCommand = new Runnable() { public void run() { mCounter.get(); } };
         incrementGetCommand = new Runnable() { public void run() { mCounter.incrementAndGet(); } };
-        getIncrementCommand = new Runnable() {  public void run() { mCounter.getAndIncrement(); } };
+        getIncrementCommand = new Runnable() { public void run() { mCounter.getAndIncrement(); } };
         decrementGetCommand = new Runnable() { public void run() { mCounter.decrementAndGet(); } };
         getDecrementCommand = new Runnable() { public void run() { mCounter.getAndDecrement(); } };
     }
